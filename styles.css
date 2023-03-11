@@ -1,0 +1,67 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+button {
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+}
+
+select {
+  margin: 5px 10px;
+}
+
+#new-task-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#add-task-button {
+  flex-shrink: 1;
+  align-self: center;
+  margin: 20px;
+  padding: 5px 10px;
+}
+
+#task-container {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+}
+/* Style the focused input field */
+input:focus {
+  border: 2px solid blue;
+  outline: none; /* Remove the default outline */
+}
+
+/* Style the focused div element */
+div:focus {
+  background-color: gray;
+}
+  
+/* Style the container element when it contains a focused input field */
+.container:focus-within {
+  background-color: lightblue;
+}
+
+/* Style the radio button */
+input[type="radio"] {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  cursor: pointer;
+  vertical-align: middle;
+  margin-left: 10px;
+}
+
+/* Style the radio button when it is checked */
+input[type="radio"]:checked {
+  background-color: #ccc;
+}
